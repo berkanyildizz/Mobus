@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/arkaplan">
+
+    <EditText
+        android:id="@+id/userpasswordText"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="user password"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userEmailText" />
+
+    <EditText
+        android:id="@+id/userEmailText"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="user email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="girisYap"
+        android:text="Sign In "
+        app:layout_constraintStart_toStartOf="@+id/userpasswordText"
+        app:layout_constraintTop_toBottomOf="@+id/userpasswordText" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="kayitOl"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="@+id/userpasswordText"
+        app:layout_constraintTop_toTopOf="@+id/signInButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

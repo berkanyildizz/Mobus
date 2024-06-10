@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:layout_height="140dp"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/koltuknorow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="1"
+        android:textSize="24sp"
+        android:background="@drawable/koltuk"
+        android:layout_margin="20dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/adsoyadrow"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="ad soyad"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/neredennereyerow"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="nereden - nereye" />
+
+        <TextView
+            android:id="@+id/sefernorow"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="right"
+            android:textSize="15sp"
+            android:text="sefer no" />
+    </LinearLayout>
+</LinearLayout>
